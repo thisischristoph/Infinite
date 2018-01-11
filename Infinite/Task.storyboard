@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FBq-Ce-Kgo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Task-->
+        <scene sceneID="tht-cd-KLx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Task" id="SJp-8G-VMf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Mx-w9-Ncp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="764" y="152"/>
+        </scene>
+        <!--SubTask-->
+        <scene sceneID="FtZ-zx-jBU">
+            <objects>
+                <tableViewController title="SubTask" id="FBq-Ce-Kgo" customClass="SubTaskViewController" customModule="Infinite" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="sbN-p8-6RG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SubTask" rowHeight="60" id="WEh-uz-CBO" customClass="TaskCell" customModule="Infinite" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WEh-uz-CBO" id="9Zp-FC-qmG">
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="59.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LDP-3Y-xwn">
+                                            <rect key="frame" x="36" y="28" width="277" height="2"/>
+                                        </progressView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="LDP-3Y-xwn" secondAttribute="trailing" constant="20" id="aq5-Hh-c6M"/>
+                                        <constraint firstItem="LDP-3Y-xwn" firstAttribute="leading" secondItem="9Zp-FC-qmG" secondAttribute="leadingMargin" constant="20" id="oa9-db-oAk"/>
+                                        <constraint firstItem="LDP-3Y-xwn" firstAttribute="centerY" secondItem="9Zp-FC-qmG" secondAttribute="centerY" id="wsI-wk-8Tk"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="FBq-Ce-Kgo" id="scR-v2-OHI"/>
+                            <outlet property="delegate" destination="FBq-Ce-Kgo" id="C9m-8h-AGc"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="SJp-8G-VMf" kind="show" identifier="SubTask" id="gO5-aG-pRl"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bHw-BD-YRH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="153"/>
+        </scene>
+    </scenes>
+</document>

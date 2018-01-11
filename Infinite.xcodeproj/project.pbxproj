@@ -13,6 +13,9 @@
 		DF68E7F42006CC5100EFC1E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF68E7F32006CC5100EFC1E4 /* Assets.xcassets */; };
 		DF68E7F72006CC5100EFC1E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF68E7F52006CC5100EFC1E4 /* LaunchScreen.storyboard */; };
 		DF68E8022006CC5200EFC1E4 /* InfiniteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF68E8012006CC5200EFC1E4 /* InfiniteTests.swift */; };
+		DF68E80D2006CDF800EFC1E4 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF68E80C2006CDF800EFC1E4 /* TaskCell.swift */; };
+		DF68E80F2006CEB400EFC1E4 /* Task.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF68E80E2006CEB400EFC1E4 /* Task.storyboard */; };
+		DF68E8112006CFD900EFC1E4 /* SubTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF68E8102006CFD900EFC1E4 /* SubTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		DF68E7FD2006CC5100EFC1E4 /* InfiniteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfiniteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF68E8012006CC5200EFC1E4 /* InfiniteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteTests.swift; sourceTree = "<group>"; };
 		DF68E8032006CC5200EFC1E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF68E80C2006CDF800EFC1E4 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		DF68E80E2006CEB400EFC1E4 /* Task.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Task.storyboard; sourceTree = "<group>"; };
+		DF68E8102006CFD900EFC1E4 /* SubTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +85,10 @@
 			children = (
 				DF68E7EC2006CC5100EFC1E4 /* AppDelegate.swift */,
 				DF68E7EE2006CC5100EFC1E4 /* ViewController.swift */,
+				DF68E8102006CFD900EFC1E4 /* SubTaskViewController.swift */,
 				DF68E7F02006CC5100EFC1E4 /* Main.storyboard */,
+				DF68E80E2006CEB400EFC1E4 /* Task.storyboard */,
+				DF68E80C2006CDF800EFC1E4 /* TaskCell.swift */,
 				DF68E7F32006CC5100EFC1E4 /* Assets.xcassets */,
 				DF68E7F52006CC5100EFC1E4 /* LaunchScreen.storyboard */,
 				DF68E7F82006CC5100EFC1E4 /* Info.plist */,
@@ -180,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF68E7F72006CC5100EFC1E4 /* LaunchScreen.storyboard in Resources */,
+				DF68E80F2006CEB400EFC1E4 /* Task.storyboard in Resources */,
 				DF68E7F42006CC5100EFC1E4 /* Assets.xcassets in Resources */,
 				DF68E7F22006CC5100EFC1E4 /* Main.storyboard in Resources */,
 			);
@@ -200,6 +210,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF68E7EF2006CC5100EFC1E4 /* ViewController.swift in Sources */,
+				DF68E80D2006CDF800EFC1E4 /* TaskCell.swift in Sources */,
+				DF68E8112006CFD900EFC1E4 /* SubTaskViewController.swift in Sources */,
 				DF68E7ED2006CC5100EFC1E4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
